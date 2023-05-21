@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<style>
+body {
+	background-color: #f2f2f2;
+}
+
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+}
+
+body {
+  background: #117dfb;
+  background: linear-gradient(to top, #ffffff, #117dfb);
+  background-size: 2000px 2000px;
+}
+
+a,
+a:link,
+a:hover {
+  text-decoration: none;
+}
+
+.card {
+  border: 0 !important;
+}
+
+.card-title {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.card-img-left {
+  width: 75%;
+  background: scroll center url('https://source.unsplash.com/WEQbe2jBg40/414x512');
+  background-size: cover;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+  </style>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<a class="navbar-brand" href="#">My Site</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="/index">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/login">Login</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<br><br><br>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 col-xl-9 mx-auto">
+					<div class="card card-signin flex-row my-5">
+						<div class="card-img-left d-none d-md-flex">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title text-center">Register</h5>
+							<form action="/register" method="post">
+								<div class="form-row">
+									<div class="form-group col-md-4">
+										<label for="first-name">First Name</label>
+										<input type="text" class="form-control" id="first-name" placeholder="First Name" name="firstname">
+									</div>
+									<div class="form-group col-md-4">
+										<label for="middle-name">Middle Name</label>
+										<input type="text" class="form-control" id="middle-name" placeholder="Middle Name" name="middlename">
+									</div>
+									<div class="form-group col-md-4">
+										<label for="last-name">Last Name</label>
+										<input type="text" class="form-control" id="last-name" placeholder="Last Name" name="lastname">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-4">
+										<label for="age">Age</label>
+										<input type="number" class="form-control" id="age" placeholder="Age" name="age">
+									</div>
+									<div class="form-group col-md-4">
+										<label for="gender">Gender</label>
+										<select id="gender" class="form-control" name="gender">
+											<option disabled selected>Choose...</option>
+											<option value="Male">Male</option>
+											<option value="Female">Female</option>
+											<option value="Other">Other</option>
+										</select>
+									</div>
+									<div class="form-group col-md-4">
+										<label for="contact-number">Contact Number</label>
+										<input type="text" class="form-control" id="contact-number" placeholder="Contact Number" name="contact_number" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="email">Email address</label>
+									<input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+								</div>
+								<div class="form-group">
+									<label for="password">Password</label>
+									<input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
+								</div>
+								<div class="form-group">
+					  				<label for="usertype">User Type</label>
+					  				<select id="usertype" class="form-control" name="usertype" required>
+										<option disabled selected>Choose...</option>
+										<option value="Admin">Admin</option>
+										<option value="User">User</option>
+					  				</select>
+								</div>
+								<button type="submit" class="btn btn-primary btn-block">Register</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>          
+  </body>
+</html>
